@@ -3,7 +3,7 @@ name: Pages
 on:
   push:
     branches:
-      - main  # 当 main 分支有推送时触发
+      - master  # 当 main 分支有推送时触发
 
   # 允许手动触发
   workflow_dispatch:
