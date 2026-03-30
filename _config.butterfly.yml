@@ -1,0 +1,22 @@
+# 导航栏菜单
+menu:
+  首页: / || fas fa-home
+  归档: /archives/ || fas fa-archive
+  标签: /tags/ || fas fa-tags
+  分类: /categories/ || fas fa-folder-open
+  关于: /about/ || fas fa-heart
+
+# 首页顶部图
+index_img: https://你的图片地址.jpg
+
+# 作者信息
+avatar: https://你的头像地址.jpg
+
+# 社交链接
+social:
+  github: https://github.com/bk268 || fab fa-github
+  email: mailto:your-email@example.com || fas fa-envelope
+
+# 评论系统（后续配置）
+comments:
+  use: waline  # 或 twikoo, gitalk

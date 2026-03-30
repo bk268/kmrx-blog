@@ -1,0 +1,25 @@
+# 搜索配置
+search:
+  path: search.xml
+  field: post
+  content: true
+  format: html
+
+# Feed 配置
+feed:
+  type: atom
+  path: atom.xml
+  limit: 20
+  hub:
+  content:
+  content_limit: 140
+  content_limit_delim: ' '
+  order_by: -date
+  icon: icon.png
+  autodiscovery: true
+
+# Sitemap 配置
+sitemap:
+  path: sitemap.xml
+baidusitemap:
+  path: baidusitemap.xml
