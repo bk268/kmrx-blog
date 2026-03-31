@@ -1,10 +1,8 @@
 # 导航栏菜单
 menu:
   首页: / || fas fa-home
-  归档: /archives/ || fas fa-archive
-  标签: /tags/ || fas fa-tags
-  分类: /categories/ || fas fa-folder-open
-  关于: /about/ || fas fa-heart
+  文章: /archives/ || fas fa-archive
+  关于: /about/ || fas fa-user
 
 # 首页顶部图
 index_img: https://你的图片地址.jpg
@@ -75,17 +73,7 @@ background:
 
 # 侧边栏背景
 aside:
-  enable: true
-  mobile: true
-  position: right        # right 或 left
-  card_author:
-    enable: true
-    description: 一个热爱技术的博主
-    button:
-      enable: true
-      icon: fab fa-github
-      text: Follow Me
-      link: https://github.com/bk268
+  enable: false
 
 # ===================================
 # 5. 文章列表样式
@@ -137,9 +125,9 @@ readmode: true
 rightside_scroll: true
 
 
-# 引入自定义 CSS
 inject:
   head:
-    - <link rel="stylesheet" href="/css/custom.css">
-  bottom:
-    - <script src="/js/custom.js"></script>
+    # 引入字体
+    - <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500&family=Noto+Serif+SC:wght@400;600;700&display=swap" rel="stylesheet">
+    # 引入极简 CSS
+    - <link rel="stylesheet" href="/css/minimal.css">
