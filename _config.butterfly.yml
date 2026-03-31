@@ -20,3 +20,126 @@ social:
 # 评论系统（后续配置）
 comments:
   use: waline  # 或 twikoo, gitalk
+  # ===================================
+# 1. 网站标识
+# ===================================
+
+# 网站图标（显示在浏览器标签页）
+favicon: /img/favicon.png
+
+# 头像（显示在侧边栏）
+avatar:
+  img: /img/avatar.png
+  effect: true           # 启用悬停效果
+
+# ===================================
+# 2. 首页顶部大图（Banner）
+# ===================================
+
+# 首页顶部背景图
+index_img: /img/banner.jpg
+
+# 首页副标题打字机效果
+subtitle:
+  enable: true
+  effect: true           # 打字机效果
+  source: false
+  sub:
+    - 分享技术，记录生活
+    - 探索未知的世界
+    - 保持热爱，奔赴山海
+
+# ===================================
+# 3. 导航栏美化
+# ===================================
+
+# 导航栏背景透明效果
+nav:
+  logo: /img/logo.png    # 可选，文字logo可留空
+  display_title: true
+  fixed: true            # 固定顶部
+
+# ===================================
+# 4. 背景效果
+# ===================================
+
+# 网页背景
+background:
+  enable: true
+  # 纯色背景
+  # color: '#f5f5f5'
+  # 图片背景
+  url: /img/bg.jpg
+  # 模糊度（0-100）
+  blur: 0
+
+# 侧边栏背景
+aside:
+  enable: true
+  mobile: true
+  position: right        # right 或 left
+  card_author:
+    enable: true
+    description: 一个热爱技术的博主
+    button:
+      enable: true
+      icon: fab fa-github
+      text: Follow Me
+      link: https://github.com/bk268
+
+# ===================================
+# 5. 文章列表样式
+# ===================================
+
+# 文章封面图默认地址
+default_cover: /img/default-cover.jpg
+
+# 文章列表样式: 0=全宽, 1=卡片, 2=迷你
+index_post_content:
+  method: 2              # 迷你卡片，更紧凑
+  length: 500            # 摘要长度
+
+# ===================================
+# 6. 页脚美化
+# ===================================
+
+footer:
+  owner:
+    enable: true
+    since: 2026
+  custom_text: |
+    <div style="text-align: center; margin: 10px 0;">
+      <span>🚀 使用 Hexo + Butterfly 构建</span>
+      <br>
+      <span>📧 联系邮箱: 2909598545@qq.com</span>
+    </div>
+  privacy: false
+  copyright: true
+
+# ===================================
+# 7. 特效开关
+# ===================================
+
+# 点击爱心效果
+click_heart:
+  enable: true
+  mobile: false
+
+# 鼠标跟随特效
+cursor_effect:
+  enable: false          # 如需开启设为 true
+  type: love             # love 或 text
+
+# 页面滚动进度条
+readmode: true
+
+# 返回顶部按钮
+rightside_scroll: true
+
+
+# 引入自定义 CSS
+inject:
+  head:
+    - <link rel="stylesheet" href="/css/custom.css">
+  bottom:
+    - <script src="/js/custom.js"></script>

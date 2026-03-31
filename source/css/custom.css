@@ -1,0 +1,260 @@
+/* ===================================
+   全局字体优化
+   =================================== */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;400;500;700&display=swap');
+
+:root {
+  --font-family: 'Noto Sans SC', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  --card-bg: rgba(255, 255, 255, 0.95);
+  --card-border: 1px solid rgba(0, 0, 0, 0.05);
+  --shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+}
+
+/* ===================================
+   导航栏美化
+   =================================== */
+#nav {
+  background: rgba(255, 255, 255, 0.85) !important;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+  border-bottom: none;
+}
+
+#nav a {
+  color: #333 !important;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+#nav a:hover {
+  color: #49b1f5 !important;
+  transform: translateY(-2px);
+}
+
+/* ===================================
+   首页 Banner 美化
+   =================================== */
+#page-header {
+  position: relative;
+  height: 100vh;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+}
+
+#page-header::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(to bottom, rgba(0,0,0,0.3), rgba(0,0,0,0.6));
+}
+
+#site-info {
+  position: relative;
+  z-index: 1;
+  animation: fadeInUp 1s ease;
+}
+
+.site-title {
+  font-size: 3rem !important;
+  font-weight: 700;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+  letter-spacing: 2px;
+}
+
+.site-subtitle {
+  font-size: 1.2rem;
+  margin-top: 1rem;
+  opacity: 0.9;
+}
+
+/* ===================================
+   文章卡片美化
+   =================================== */
+.recent-post-item {
+  background: var(--card-bg) !important;
+  border-radius: 12px !important;
+  border: var(--card-border) !important;
+  box-shadow: var(--shadow) !important;
+  transition: all 0.3s ease;
+  overflow: hidden;
+}
+
+.recent-post-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12) !important;
+}
+
+.post-cover img {
+  border-radius: 12px 12px 0 0;
+  transition: transform 0.5s ease;
+}
+
+.recent-post-item:hover .post-cover img {
+  transform: scale(1.05);
+}
+
+/* 文章标题 */
+.article-title {
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: #2c3e50;
+  transition: color 0.3s;
+}
+
+.article-title:hover {
+  color: #49b1f5;
+}
+
+/* ===================================
+   侧边栏美化
+   =================================== */
+.card-widget {
+  background: var(--card-bg) !important;
+  border-radius: 12px !important;
+  border: var(--card-border) !important;
+  box-shadow: var(--shadow) !important;
+  margin-bottom: 20px;
+}
+
+.card-widget .item-headline {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #2c3e50;
+  border-left: 4px solid #49b1f5;
+  padding-left: 10px;
+}
+
+/* 头像悬停效果 */
+.avatar-img {
+  transition: transform 0.5s ease;
+}
+
+.avatar-img:hover {
+  transform: rotate(360deg) scale(1.1);
+}
+
+/* ===================================
+   代码块美化（Mac 风格）
+   =================================== */
+.highlight {
+  border-radius: 8px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  margin: 20px 0;
+}
+
+.highlight::before {
+  content: "● ● ●";
+  color: #ff5f56;
+  font-size: 12px;
+  letter-spacing: 6px;
+  padding: 10px 15px;
+  display: block;
+  background: #f6f8fa;
+  border-bottom: 1px solid #e1e4e8;
+  border-radius: 8px 8px 0 0;
+}
+
+.highlight code {
+  font-family: 'Fira Code', 'Consolas', monospace;
+  font-size: 0.9rem;
+  line-height: 1.6;
+}
+
+/* ===================================
+   页脚美化
+   =================================== */
+#footer {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  padding: 40px 0;
+  margin-top: 50px;
+}
+
+#footer a {
+  color: rgba(255, 255, 255, 0.9);
+  transition: color 0.3s;
+}
+
+#footer a:hover {
+  color: #fff;
+  text-decoration: underline;
+}
+
+/* ===================================
+   滚动条美化
+   =================================== */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #c1c1c1;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #a8a8a8;
+}
+
+/* ===================================
+   动画效果
+   =================================== */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* 页面加载动画 */
+#content-inner {
+  animation: fadeInUp 0.6s ease;
+}
+
+/* ===================================
+   响应式优化
+   =================================== */
+@media (max-width: 768px) {
+  .site-title {
+    font-size: 2rem !important;
+  }
+  
+  .recent-post-item {
+    margin-bottom: 15px;
+  }
+  
+  #aside {
+    display: none;  /* 移动端隐藏侧边栏 */
+  }
+}
+
+/* ===================================
+   深色模式适配（可选）
+   =================================== */
+[data-theme="dark"] {
+  --card-bg: rgba(30, 30, 30, 0.95);
+  --card-border: 1px solid rgba(255, 255, 255, 0.05);
+  --shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+}
+
+[data-theme="dark"] #nav {
+  background: rgba(30, 30, 30, 0.85) !important;
+}
+
+[data-theme="dark"] .article-title {
+  color: #e0e0e0;
+}
