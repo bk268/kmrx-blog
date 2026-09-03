@@ -6,6 +6,10 @@
 menu:
   首页: / || fas fa-home
   文章: /archives/ || fas fa-archive
+  分类: /categories/ || fas fa-folder-open
+  标签: /tags/ || fas fa-tags
+  友链: /link/ || fas fa-link
+  搜索: /search/ || fas fa-search
   关于: /about/ || fas fa-user
 
 # ===================================
@@ -98,7 +102,85 @@ inject:
     - <link rel="stylesheet" href="/kmrx-blog/css/custom.css">
 
 # ===================================
-# 评论系统（后续配置）
+# 评论系统（已按要求关闭）
 # ===================================
 comments:
-  use: waline  # 或 twikoo, gitalk
+  use: false          # 暂不启用评论系统
+
+# ===================================
+# 社交链接
+# ===================================
+social:
+  Github: https://github.com/bk268 || fab fa-github || GitHub
+  Email: mailto:2909598545@qq.com || fas fa-envelope || 邮箱
+  Rss: /atom.xml || fas fa-rss || Rss
+
+# ===================================
+# 动态特效（方案 A）
+# ===================================
+# 粒子背景
+canvas_nest:
+  enable: true
+  color: '187,134,252'      # 紫调，契合整体配色
+  opacity: 0.5
+  zIndex: -1
+  count: 99
+  mobile: true
+
+# 点击烟花特效
+fireworks:
+  enable: true
+  zIndex: 9999
+  mobile: true
+
+# 深色模式
+darkmode: true
+
+# 页面预加载动画
+preloader:
+  enable: true
+  type: pace
+  pace_color: 1e90ff
+
+# ===================================
+# 本地搜索（方案 B）
+# ===================================
+search:
+  # 使用本地搜索
+  use: local_search
+  placeholder: 搜索文章...
+  local_search:
+    preload: true
+    top_n_per_article: 1
+    unescape: false
+
+# ===================================
+# 访客统计与字数统计（方案 B）
+# ===================================
+busuanzi:
+  site_uv: true
+  site_pv: true
+  page_pv: true
+
+# 文章字数 / 阅读时长
+wordcount:
+  enable: true
+  post_wordcount: true
+  min2read: true
+  total_wordcount: true
+
+# ===================================
+# 友情链接卡片（方案 B）
+# ===================================
+flink:
+  - class_name: 友情链接
+    class_desc: 我的一些伙伴
+    link_list:
+      - name: GitHub
+        link: https://github.com
+        avatar: https://github.com/favicon.ico
+        descr: 全球最大的代码托管平台
+      - name: Hexo
+        link: https://hexo.io
+        avatar: https://hexo.io/favicon.ico
+        descr: 快速、简洁且高效的博客框架
