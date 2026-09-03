@@ -94,12 +94,12 @@ readmode: true
 rightside_scroll: true
 
 # ===================================
-# 8. 自定义注入（站点子路径下用 /kmrx-blog/ 前缀）
+# 8. 自定义注入（部署在根路径）
 # ===================================
 inject:
   head:
     - <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500&family=Noto+Serif+SC:wght@400;600;700&display=swap" rel="stylesheet">
-    - <link rel="stylesheet" href="/kmrx-blog/css/custom.css">
+    - <link rel="stylesheet" href="/css/custom.css">
 
 # ===================================
 # 评论系统（已按要求关闭）

@@ -12,10 +12,10 @@ language: zh-CN
 timezone: Asia/Shanghai
 
 # ===================================
-# URL 配置（GitHub Pages 项目站点，部署在 /kmrx-blog/ 子路径）
+# URL 配置（GitHub Pages 用户站点，部署在根路径）
 # ===================================
-url: https://bk268.github.io/kmrx-blog/
-root: /kmrx-blog/
+url: https://bk268.github.io/
+root: /
 permalink: :year/:month/:day/:title/
 permalink_defaults:
 pretty_urls:
