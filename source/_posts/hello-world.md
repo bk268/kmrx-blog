@@ -1,38 +1,31 @@
 ---
-title: Hello World
+title: 博客开张：记录技术与生活
+date: 2026-03-31 12:00:00
+updated: 2026-03-31 12:00:00
+tags:
+  - Hexo
+  - 随笔
+categories:
+  - 技术分享
+cover: /img/default-cover.jpg
+description: kmrx-blog 的第一篇正式文章，介绍这个博客的定位和写作计划。
 ---
-Welcome to [Hexo](https://hexo.io/)! This is your very first post. Check [documentation](https://hexo.io/docs/) for more info. If you get any problems when using Hexo, you can find the answer in [troubleshooting](https://hexo.io/docs/troubleshooting.html) or you can ask me on [GitHub](https://github.com/hexojs/hexo/issues).
 
-## Quick Start
+## 关于这个博客
 
-### Create a new post
+这里是 bk268 的个人博客，主要记录学习过程中的技术总结、工具使用心得，以及生活里值得留下的片段。
 
-``` bash
-$ hexo new "My New Post"
-```
+站点由 Hexo + Butterfly 构建，源码托管在 GitHub，通过 GitHub Actions 自动构建并发布到 GitHub Pages。
 
-More info: [Writing](https://hexo.io/docs/writing.html)
+## 会写些什么
 
-### Run server
+- 技术笔记：开发中遇到的问题、排查过程和解决方案
+- 工具与效率：正在使用的软件、脚本和工作流
+- 生活记录：读书、旅行和一些随手想法
 
-``` bash
-$ hexo server
-```
+## 如何找到我
 
-More info: [Server](https://hexo.io/docs/server.html)
+- GitHub: https://github.com/bk268
+- 邮箱: 2909598545@qq.com
 
-### Generate static files
-
-``` bash
-$ hexo generate
-```
-
-More info: [Generating](https://hexo.io/docs/generating.html)
-
-### Deploy to remote sites
-
-``` bash
-$ hexo deploy
-```
-
-More info: [Deployment](https://hexo.io/docs/one-command-deployment.html)
+如果你对某篇文章有疑问，欢迎通过邮件交流。
