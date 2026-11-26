@@ -3,7 +3,7 @@ name: Pages
 on:
   push:
     branches:
-      - master  # 当 main 分支有推送时触发
+      - master  # 当 master 分支有推送时触发
 
   # 允许手动触发
   workflow_dispatch:
@@ -40,12 +40,12 @@ jobs:
         uses: actions/cache@v4
         with:
           path: node_modules
-          key: ${{ runner.OS }}-npm-cache-${{ hashFiles('package.json') }}
+          key: ${{ runner.OS }}-npm-cache-${{ hashFiles('package-lock.json') }}
           restore-keys: |
             ${{ runner.OS }}-npm-cache-
 
       - name: Install Dependencies
-        run: npm install
+        run: npm ci
 
       - name: Build
         run: npm run build  # 或者 hexo generate
@@ -65,4 +65,4 @@ jobs:
     steps:
       - name: Deploy to GitHub Pages
         id: deployment
-        uses: actions/deploy-pages@v4 
+        uses: actions/deploy-pages@v4
